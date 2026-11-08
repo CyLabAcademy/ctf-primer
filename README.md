@@ -89,11 +89,7 @@ $ make book.pdf "PAGE_SIZE=[6in, 9in]"
 ```
 
 This needs [asciidoctor-pdf](https://github.com/asciidoctor/asciidoctor-pdf).
-On Ubuntu/Debian:
 
-```
-$ sudo apt-get install asciidoctor ruby-asciidoctor-pdf
-```
 
 Code coloring works the same as the HTML build: it uses `pygments.rb` if installed.
 
