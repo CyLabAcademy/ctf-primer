@@ -1,3 +1,5 @@
+PAGE_SIZE = Letter
+
 book.html :
 	asciidoctor -a toc=left book.adoc
 
@@ -6,6 +8,7 @@ book.pdf :
 		-a doctype=book \
 		-a toc \
 		-a media=prepress \
+		-a pdf-page-size="$(PAGE_SIZE)" \
 		-a pdf-themesdir=themes \
 		-a pdf-theme=print \
 		book.adoc

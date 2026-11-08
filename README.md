@@ -74,11 +74,18 @@ $ make
 ### Print PDF
 
 The following line compiles `book.adoc` into `book.pdf`, laid out for printing:
-6x9in pages, facing-page margins, and chapters starting on a right-hand page.
-Page size, margins and fonts are set in `themes/print-theme.yml`.
+facing-page margins and chapters starting on a right-hand page.
+Margins and fonts are set in `themes/print-theme.yml`.
 
 ```
 $ make book.pdf
+```
+
+Pages are US Letter by default. Set `PAGE_SIZE` for another size:
+
+```
+$ make book.pdf PAGE_SIZE=A4
+$ make book.pdf "PAGE_SIZE=[6in, 9in]"
 ```
 
 This needs [asciidoctor-pdf](https://github.com/asciidoctor/asciidoctor-pdf).
