@@ -229,7 +229,7 @@ The piece of memory in which are stored the variables of a function is called th
 
 [.text-center]
 .Stack frame of func2
-image::images/9image1.png[]
+image::images/9image1.PNG[]
 
 If we want to access the value of var6, we do rbp minus 3. Note that if we subtract three positions from rbp, we would be pointing to var6. As you can see, accessing variables in assembly is not complicated, we just need to subtract from rbp some positions to point to the variable we want. However, we just have one register in the processor to keep the value of the base pointer. So, what we do, is pushing into memory the value of the base pointer from the previous function. That is the “rbp func1” that you see in the memory from the previous image. We store the rbp from a previous function, as we store a local variable, to be able to recover it later when we come back to func1 and be able to access the variable from func1. We explained all that to point out what was this line for:
 
