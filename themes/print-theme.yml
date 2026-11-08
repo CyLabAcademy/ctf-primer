@@ -1,0 +1,10 @@
+extends: default
+page:
+  size: [6in, 9in]
+  margin: [0.75in, 0.625in, 0.75in, 0.625in]
+  margin_inner: 0.875in
+  margin_outer: 0.625in
+base:
+  font_size: 10
+code:
+  font_size: 8

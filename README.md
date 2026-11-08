@@ -71,6 +71,25 @@ The following line compiles `book.adoc` into `book.html` with a table of content
 $ make
 ```
 
+### Print PDF
+
+The following line compiles `book.adoc` into `book.pdf`, laid out for printing:
+6x9in pages, facing-page margins, and chapters starting on a right-hand page.
+Page size, margins and fonts are set in `themes/print-theme.yml`.
+
+```
+$ make book.pdf
+```
+
+This needs [asciidoctor-pdf](https://github.com/asciidoctor/asciidoctor-pdf).
+On Ubuntu/Debian:
+
+```
+$ sudo apt-get install asciidoctor ruby-asciidoctor-pdf
+```
+
+Code coloring works the same as the HTML build: it uses `pygments.rb` if installed.
+
 
 ## Deploy
 
